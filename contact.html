@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario | Contact</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/challenge.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="top">
+            <a href="index.html"><img class="header-image" src="images/mario_logo.png" alt="mariologo"/></a>
+            <a href="#menu" id="mobMenuTrigger">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> <!-- end hamburger -->
+            </a>
+            <nav class="main-menu">
+                <ul class="menu-list">
+                    <li class="main-li active"><a href="contact.html">Contact</a></li>
+                    <li class="main-li"><a href="about.html">About</a></li>
+                    <li class="main-li"><a href="videos.html">Videos</a></li>
+                    <li class="main-li"><a href="games.html">Games</a></li>
+                    <li class="main-li"><a href="news.html">News</a></li>
+                    <li class="main-li"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="image">
+           <h1>Contact</h1>
+        </div>
+        <div id="page">
+            <div class="wrap-main">
+                <main class="contact">
+                    <h2>Have questions? Let us know!</h2>
+                    <form method="post" name="contactForm" id="contactForm">
+                       <label for ="name" class="ctc-lbl">Name:</label>
+                       <input class="ctc-input" type="text" name="name" required>
+                       <label for="email" class="ctc-lbl">Email:</label>
+                       <input class="ctc-input" type="email" name="email" required>
+                       <label for="message" class="ctc-lbl">Message:</label>
+                       <textarea class="ctc-message" name="message" rows="5" cols="47" required></textarea>
+                       <button class="ctc-btn" onclick="return validateForm()"> Send </button>
+                       <div id="contactSent" class="thankyou"></div>
+                   </form>
+                </main>
+               <aside class="find-us">
+                    <h3>Find us:</h3>
+                    <p class="address">Far far away,</p>
+                    <p class="address">Behind the word mountains</p>
+                    <p class="address">Vokalia and Consonantia</p> 
+                    <p class="address">Fairyland</p>
+                    <p class="address">BNX 123</p>
+                </aside>
+            </div><!--wrap main-->
+        </div><!-- page -->
+        <div class="clearfix"></div>
+        <footer>
+            <div class="fixedsocial">
+                <a href="http://www.facebook.com" target="_blank"><div class="sm" id="fb"></div></a>
+                <a href="http://www.twitter.com" target="_blank"><div class="sm" id="tw"></div></a>
+                <a href="http://www.instagram.com" target="_blank"><div class="sm" id="in"></div></a>
+                <a href="http://www.pinterest.com" target="_blank"><div class="sm" id="pin"></div></a>
+            </div><!--fixedsocial-->
+            <div class="to-top">
+                <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <p>Images on this website belongs to <a href="http://www.nintendo.com/" target="blank">Nintendo / Nintendo of America Inc.</a></p>
+            <p>Information about characters was collected from <a href="https://www.mariowiki.com/Main_Page" target="_blank">Super Mario Wiki</a></p>
+        </footer>
+    </div> <!--container-->
+    <script>
+        //Mobile Menu  
+        document.getElementById('mobMenuTrigger').addEventListener('click', function () {
+            const menuOpen = document.querySelector('.main-menu');
+            const hamBurger = document.querySelector('.hamburger');
+            menuOpen.classList.toggle('open-menu');
+            hamBurger.classList.toggle('active-menu');
+        });
+
+        //Form Validation  
+        function validateForm() {
+            const name = document.forms["contactForm"]["name"].value;
+            const email = document.forms["contactForm"]["email"].value;
+            const message = document.forms["contactForm"]["message"].value;
+            if (name == "" | email == "" | message == "") {
+                alert("Oops! Please fill in all the fields correctly dear");
+                return false;
+            }
+        };
+
+        // Thank you on submit + don't refresh page 
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            const sayThanks = document.querySelector('#contactSent');
+            document.getElementById('contactForm').reset();
+            sayThanks.innerHTML = "Thanks! We will get back as soon as we can!";
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

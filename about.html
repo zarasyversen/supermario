@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario | About</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/challenge.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="top">
+            <a href="index.html"><img class="header-image" src="images/mario_logo.png" alt="mariologo"/></a>
+            <a href="#menu" id="mobMenuTrigger">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> <!-- end hamburger -->
+            </a>
+            <nav class="main-menu">
+                <ul class="menu-list">
+                    <li class="main-li"><a href="contact.html">Contact</a></li>
+                    <li class="main-li active"><a href="about.html">About</a></li>
+                    <li class="main-li"><a href="videos.html">Videos</a></li>
+                    <li class="main-li"><a href="games.html">Games</a></li>
+                    <li class="main-li"><a href="news.html">News</a></li>
+                    <li class="main-li"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="image">
+           <h1>About</h1>
+        </div>
+        <div id="page">
+            <div class="wrap-main">
+                <main>
+                    <h2>Learn more about us</h2>
+                    <p> The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just.</p>
+
+                    <h3>"Now fax quiz Jack!"</h3> 
+                    <p>my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just
+                    </p>
+                </main>
+                <aside>
+                    <h3>Toad!</h3>
+                    <img class="skewT" src="images/characters/toad.png" alt="Toad"/>
+                    <p>Toad is a character who is Princess Peach's attendant and a long time protector of the Mushroom Kingdom. </p>
+
+                    <img src="images/characters/toad_jump.png" alt="Happy toad"/>
+
+                    <p>Toad is often foreseen as a happy character (happy almost to the point of childishness). He is presumably one of the most humble characters in the Mario series, as he seems to be actually aware of his own cowardice. Despite this, Toad is kind and often helps Mario on his multiple adventures. </p>
+                </aside>
+            </div><!--wrap main-->
+        </div><!-- page -->
+        <div class="clearfix"></div>
+        <footer>
+            <div class="fixedsocial">
+                <a href="http://www.facebook.com" target="_blank"><div class="sm" id="fb"></div></a>
+                <a href="http://www.twitter.com" target="_blank"><div class="sm" id="tw"></div></a>
+                <a href="http://www.instagram.com" target="_blank"><div class="sm" id="in"></div></a>
+                <a href="http://www.pinterest.com" target="_blank"><div class="sm" id="pin"></div></a>
+            </div><!--fixedsocial-->
+            <div class="to-top">
+                <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <p>Images on this website belongs to <a href="http://www.nintendo.com/" target="blank">Nintendo / Nintendo of America Inc.</a></p>
+            <p>Information about characters was collected from <a href="https://www.mariowiki.com/Main_Page" target="_blank">Super Mario Wiki</a></p>
+        </footer>
+    </div> <!--container-->
+    <script>
+        /*Mobile Menu*/ 
+        document.getElementById('mobMenuTrigger').addEventListener('click', function () {
+            const menuOpen = document.querySelector('.main-menu');
+            const hamBurger = document.querySelector('.hamburger');
+            menuOpen.classList.toggle('open-menu');
+            hamBurger.classList.toggle('active-menu');
+        });
+    </script>
+</body>
+</html>

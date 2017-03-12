@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario | Games</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/challenge.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="top">
+            <a href="index.html"><img class="header-image" src="images/mario_logo.png" alt="mariologo"/></a>
+            <a href="#menu" id="mobMenuTrigger">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> <!-- end hamburger -->
+            </a>
+            <nav class="main-menu">
+                <ul class="menu-list">
+                    <li class="main-li"><a href="contact.html">Contact</a></li>
+                    <li class="main-li"><a href="about.html">About</a></li>
+                    <li class="main-li"><a href="videos.html">Videos</a></li>
+                    <li class="main-li active"><a href="games.html">Games</a></li>
+                    <li class="main-li"><a href="news.html">News</a></li>
+                    <li class="main-li"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="image">
+           <h1>Games</h1>
+        </div>
+        <div id="page">
+            <div class="wrap-main">
+                <main>
+                    <h2>Latest Games</h2>
+                    <p> The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. </p>
+                    <div class="image-wrap">
+                        <h3>Images from Super Mario World: Super Mario Advance 2</h3>
+                        <img src="images/games/games1.jpg" alt="super mario world gameplay" class="align-center slide-in"/>
+                        <img src="images/games/games2.jpg" alt="super mario world gameplay" class="align-center slide-in"/>
+                        <img src="images/games/games3.jpg" alt="super mario world gameplay" class="align-center slide-in"/>
+                        <img src="images/games/games4.jpg" alt="super mario world gameplay" class="align-center slide-in"/>
+                        <img src="images/games/games5.jpg" alt="super mario world gameplay" class="align-center slide-in"/>
+                        <a href="https://www.nintendo.co.uk/Games/Game-Boy-Advance/Super-Mario-World-Super-Mario-Advance-2-267409.html#Gallery" target="_blank"> See more on the official website</a>
+                    </div>
+                </main>
+                <aside>
+                   <h3>Goomba!</h3>
+                   <img class="stomp" src="images/characters/goomba.png" alt="Goomba"/>
+                   <p>Goombas resemble small, brown mushrooms and are a fungus-based species like Toads, Amanitas, Spooks, and Shroobs. Goombas are physically weak and are not much of a threat to Mario or Luigi, since a single stomp usually defeats them, although a number of different Goomba variants have emerged throughout the years.</p>
+
+                   <img src="images/characters/mario_goomba.png" alt="Mario and Goomba"/>
+
+                   <p>Goombas are among the most basic enemies. They can typically be defeated with a single punch, stomp, or fireball attack, although in some games, they are a bit more resilient. When jumped on, Goombas usually flatten before being defeated. 
+                   </p>
+               </aside>
+           </div><!--wrap main-->
+           <div id="bottom-boxes">
+                <div class="minibox box-image">
+                    <h4>Latest Videos</h4>
+                    <a href="videos.html"><img src="images/gamess.png" alt="games"></a>
+                </div>
+                <div class="minibox">
+                    <h4>News</h4>
+                    <ul>
+                        <li class="news-li"><a href="news.html">Mario vs. Luigi </a></li>
+                        <li class="news-li"><a href="news.html">Yoshi tired of being dumped</a></li>
+                        <li class="news-li"><a href="news.html">Goomba got stepped on</a></li>
+                        <li class="news-li"><a href="news.html">The princess diary</a></li>
+                    </ul>
+                </div>
+                    <div class="box">
+                    <h4>Do you know your characters?</h4>
+                    <div class="ch" id="toad" onclick=""></div>
+                    <div class="ch" id="princess" onclick=""></div>
+                    <div class="ch" id="mario" onclick=""></div>
+                    <div class="ch" id="goomba" onclick=""></div>
+                    <div class="ch" id="yoshi" onclick=""></div>
+                </div><!--box-->
+            </div><!--bottom-boxes-->
+        </div><!-- page -->
+        <div class="clearfix"></div>
+        <footer>
+            <div class="fixedsocial">
+                <a href="http://www.facebook.com" target="_blank"><div class="sm" id="fb"></div></a>
+                <a href="http://www.twitter.com" target="_blank"><div class="sm" id="tw"></div></a>
+                <a href="http://www.instagram.com" target="_blank"><div class="sm" id="in"></div></a>
+                <a href="http://www.pinterest.com" target="_blank"><div class="sm" id="pin"></div></a>
+            </div><!--fixedsocial-->
+            <div class="to-top">
+                <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <p>Images on this website belongs to <a href="http://www.nintendo.com/" target="blank">Nintendo / Nintendo of America Inc.</a></p>
+            <p>Information about characters was collected from <a href="https://www.mariowiki.com/Main_Page" target="_blank">Super Mario Wiki</a></p>
+        </footer>
+    </div> <!--container-->
+
+    <script>
+    /*Mobile Menu*/ 
+        document.getElementById('mobMenuTrigger').addEventListener('click', function () {
+            const menuOpen = document.querySelector('.main-menu');
+            const hamBurger = document.querySelector('.hamburger');
+            menuOpen.classList.toggle('open-menu');
+            hamBurger.classList.toggle('active-menu');
+        });
+
+    /*Image Slide In - Picked up from #JavaScript30 by Wes Bos */
+
+    function debounce(func, wait = 20, immediate = true) {
+        var timeout;
+            return function() {
+            var context = this, args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+        };
+    }
+    
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    function checkSlide(e) {
+            sliderImages.forEach(sliderImage => {
+            const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+            const imageBottom = sliderImage.offsetTop + sliderImage.height; 
+            const isHalfShown = slideInAt > sliderImage.offsetTop;
+            const isNotScrolledPast = window.scrollY < imageBottom;
+            if (isHalfShown && isNotScrolledPast){
+              sliderImage.classList.add('active');
+            } else {
+              sliderImage.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide));
+    </script>
+</body>
+</html>

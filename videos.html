@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario | Videos</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/challenge.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="top">
+            <a href="index.html"><img class="header-image" src="images/mario_logo.png" alt="mariologo"/></a>
+            <a href="#menu" id="mobMenuTrigger">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> <!-- end hamburger -->
+            </a>
+            <nav class="main-menu">
+                <ul class="menu-list">
+                    <li class="main-li"><a href="contact.html">Contact</a></li>
+                    <li class="main-li"><a href="about.html">About</a></li>
+                    <li class="main-li active"><a href="videos.html">Videos</a></li>
+                    <li class="main-li"><a href="games.html">Games</a></li>
+                    <li class="main-li"><a href="news.html">News</a></li>
+                    <li class="main-li"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="image">
+           <h1>Videos</h1>
+        </div>
+        <div id="page">
+            <div class="wrap-main">
+                <main>
+                    <h2>Game trailers</h2>
+                    <p>My brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump.</p>
+                    <div class="videos">
+                        <iframe class="vid-trailer" src="https://www.youtube.com/embed/O7steQttNTo" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="vid-trailer" src="https://www.youtube.com/embed/v7-2ONYDpvU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Commercials</h3>
+                    <p>A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. John Cena!</p>
+                    <div class="videos">
+                        <iframe class="vid-trailer" src="https://www.youtube.com/embed/ZdHRaMQFUFQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </main>
+                <aside>
+                <h3>Princess Peach!</h3>
+                <img class="peach" src="images/characters/princessP.png" alt="Princess Peach"/>
+                <p>Peach is a young, fair-skinned woman with an average build. She is taller than most human characters, exceeded only by Rosalina and Waluigi. She has a soft, oval face with large blue eyes framed by multiple lashes and thin, dark blonde eyebrows. </p>
+
+                <img src="images/characters/peach.png" alt="Princess Peach"/>
+
+                <p>Bowser has repeatedly kidnapped Peach and invaded her kingdom, both out of a megalomaniac desire to rule the world, but also because he has fallen in love with her. </p>
+                </aside>
+            </div><!--wrap main-->
+            <div id="bottom-boxes">
+                <div class="minibox box-image">
+                    <h4>Latest Games</h4>
+                    <img src="images/gamess.png" alt="games">
+                </div>
+                <div class="minibox">
+                    <h4>News</h4>
+                    <ul>
+                        <li class="news-li"><a href="news.html">Mario vs. Luigi </a></li>
+                        <li class="news-li"><a href="news.html">Yoshi tired of being dumped</a></li>
+                        <li class="news-li"><a href="news.html">Goomba got stepped on</a></li>
+                        <li class="news-li"><a href="news.html">The princess diary</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h4>Do you know your characters?</h4>
+                    <div class="ch" id="toad" onclick=""></div>
+                    <div class="ch" id="princess" onclick=""></div>
+                    <div class="ch" id="mario" onclick=""></div>
+                    <div class="ch" id="goomba" onclick=""></div>
+                    <div class="ch" id="yoshi" onclick=""></div>
+                </div><!--box-->
+            </div><!--bottom-boxes-->
+        </div><!-- page -->
+        <div class="clearfix"></div>
+        <footer>
+            <div class="fixedsocial">
+                <a href="http://www.facebook.com" target="_blank"><div class="sm" id="fb"></div></a>
+                <a href="http://www.twitter.com" target="_blank"><div class="sm" id="tw"></div></a>
+                <a href="http://www.instagram.com" target="_blank"><div class="sm" id="in"></div></a>
+                <a href="http://www.pinterest.com" target="_blank"><div class="sm" id="pin"></div></a>
+            </div><!--fixedsocial-->
+            <div class="to-top">
+                <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <p>Images on this website belongs to <a href="http://www.nintendo.com/" target="blank">Nintendo / Nintendo of America Inc.</a></p>
+            <p>Information about characters was collected from <a href="https://www.mariowiki.com/Main_Page" target="_blank">Super Mario Wiki</a></p>
+        </footer>
+    </div> <!--container-->
+    <script>
+    /*Mobile Menu*/ 
+        document.getElementById('mobMenuTrigger').addEventListener('click', function () {
+            const menuOpen = document.querySelector('.main-menu');
+            const hamBurger = document.querySelector('.hamburger');
+            menuOpen.classList.toggle('open-menu');
+            hamBurger.classList.toggle('active-menu');
+        });
+    </script>
+</body>
+</html>
